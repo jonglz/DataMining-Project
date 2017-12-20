@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>LYRIC SEARCH</h1><br /><br />
+        
+        <script>
+            (function() {
+             var cx = '013779405462145266600:veg_gdrmsks';
+             var gcse = document.createElement('script');
+             gcse.type = 'text/javascript';
+             gcse.async = true;
+             gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(gcse, s);
+             })();
+            </script>
+    </head>
+<body>
+
+
+<!--<form action="http://localhost:8983/solr/lyrics/browse" class="searchform" method="get" name="searchform" target="_blank">-->
+<!--    <input name="sitesearch" type="hidden">-->
+<!--        <input autocomplete="on" class="form-controls search" name="q"  required="required"  type="text">-->
+<!--            <button class="button" type="submit"> Local Search</button>-->
+<!--</form>-->
+
+<form action="http://10.19.40.220:8983/solr/lyrics/browse?q=" class="searchform" method="get" name="searchform" target="_blank">
+    <input name="sitesearch" type="hidden">
+        <input autocomplete="on" class="form-controls search" name="q"  required="required"  type="text">
+            <button class="button" type="submit"> Local Search</button>
+</form>
+
+<gcse:searchbox> </gcse:searchbox>
+
+<gcse:searchresults></gcse:searchresults>
+
+
+
+    </body>
+</html>
